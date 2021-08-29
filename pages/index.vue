@@ -1,20 +1,10 @@
 <template>
   <section class="container">
-    <h1>Welcome to the store</h1>
-    <RouteButton :route="/products/">Hez</RouteButton>
+    <h2>Welcome to the store</h2>
+    <RouteButton :route="'/products/'" :text="'Find our products'"></RouteButton>
   </section>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
-
-<style>
-.container {
-  background-color: #ffff7e;
-  margin: 10px auto;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>

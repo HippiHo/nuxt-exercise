@@ -1,5 +1,5 @@
 <template>
-  <button @click="goToRoute" class="route_btn">Find our products</button>
+  <button @click="goToRoute" class="route_btn">{{text}}</button>
 </template>
 
 <script>
@@ -7,6 +7,7 @@ export default {
   name: 'RouteButton',
   props: {
     route: String,
+    text: String,
   },
   methods: {
     goToRoute() {
