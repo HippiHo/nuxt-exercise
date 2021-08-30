@@ -1,20 +1,20 @@
 <template>
-  <button @click="goToRoute" class="route_btn">{{text}}</button>
+  <button @click="goToRoute" class="route_btn">{{ text }}</button>
 </template>
 
 <script>
 export default {
-  name: 'RouteButton',
+  name: "RouteButton",
   props: {
     route: String,
-    text: String,
+    text: String
   },
   methods: {
     goToRoute() {
-      this.$router.push('/products/')
-    },
-  },
-}
+      this.$router.push(this.route);
+    }
+  }
+};
 </script>
 
 <style scoped>
